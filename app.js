@@ -643,12 +643,17 @@
 // Question 7
 
 // var var1=4;
-// var var2=prompt("Guess the number between 1 to 10");
+// var var2=+ prompt("Guess the number between 1 to 10");
 // if(var1==var2){
-//     document.write("Bingo! Correctanswer");
+//     document.write("Bingo! Correct answer");
 // }
-// var
-// else if("")
+
+// else if(var1==var2+1){
+//         document.write("Close enough to the correct answer");
+// }
+// else{
+//         document.write("sorry try again");
+// }
     
     
 
@@ -749,6 +754,95 @@
 //     document.write("Invalid Operator");
 // }
 
+// Chapter # 12 to 13
+
+// Question 1 panding
+
+
+
+// Question 2
+
+// var var1=+ prompt("Enter first number");
+// var var2=+ prompt("Enter second number");
+
+// if(var1 > var2){
+//         document.write(var1+" is larger");
+// }
+// else if(var1==var2){
+//         document.write("Both numbers are equal");
+// }
+// else{
+//         document.write(var2 +" is larger");
+// }
+
+
+
+// Question 3
+
+// var var1=+ prompt("Enter a number");
+// if(!isNaN(var1))
+// {
+        
+// if(var1>0){
+//         document.write("Number is positive");
+// }
+// else if(var1<0){
+//         document.write("Number is Negative");
+// }
+// else{
+//         document.write("Number is Zero");
+// }
+
+// }
+// else{
+//         document.write("your input is not a number");
+// }
+
+
+// Qusetion 5
+
+// var correctPassword="furious123";
+// var userPassword=prompt("Enter your password");
+
+// if(userPassword==correctPassword){
+
+//         document.write("Correct! The password you entered matches the original password");
+// }
+// else{
+//         document.write("Invalid Password");
+// }
+
+
+
+// Question 6
+
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";}
+// else{
+// greeting = "Good evening";
+// }
+
+
+// Question 7
+
+// var time=prompt("Enter a time in clock formate (i.e 1900)");
+// if(time>=0000 && time< 1200){
+//         document.write("Good morning")
+// }
+// else if(time>=1200 && time< 1700){
+//         document.write("Good afternoon")
+// }
+// else if(time>=1700 && time< 2100){
+//         document.write("Good evening")
+// }
+// else if(time>=2100 && time< 2359){
+//         document.write("Good night")
+// }
+// else{
+//         document.write("You enter wrong time");
+// }
 
 
 
