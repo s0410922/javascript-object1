@@ -22,6 +22,7 @@
     // alert("Hello.. I can run JS through my web browser's console");
 
 
+    //Question6 done in html file
 
     //Question 7 done in html file
 
@@ -797,6 +798,41 @@
 // else{
 //         document.write("your input is not a number");
 // }
+
+
+
+
+// Question 4
+
+// var userInput=prompt("Enter a single Character");
+
+// if(userInput==='a' || userInput==='A')
+// {
+//         document.write("True Its a vowel");
+// }
+// else if(userInput==='e' || userInput==='E')
+// {
+//         document.write("True Its a vowel");
+// }
+// else if(userInput==='i' || userInput==='I')
+// {
+//         document.write("True Its a vowel");
+// }
+// else if(userInput==='o' || userInput==='O')
+// {
+//         document.write("True Its a vowel");
+// }
+// else if(userInput==='u' || userInput==='U')
+// {
+//         document.write("True Its a vowel");
+// }
+
+// else
+// {
+//         document.write("False invalid input");
+// }
+
+
 
 
 // Qusetion 5
