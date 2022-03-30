@@ -347,19 +347,19 @@
 
     // Question 2
 
-    // var a = 2, b = 1;
-    // var result = --a - --b + ++b + b--;
+//     var a = 2, b = 1;
+//     var result = --a - --b + ++b + b--;
 
-    // document.write("a is : "+a+"<br>" );
-    // document.write("b is : "+b +"<br>" );
-    // document.write("result is : "+result );
+//     document.write("a is : "+a+"<br>" );
+//     document.write("b is : "+b +"<br>" );
+//     document.write("result is : "+result );
    
-    // --a;  // a=1 
-    // --a - --b; //a=0 b=0
-    // --a - --b + ++b; //a=-1 b=-1 b=0
-    // --a - --b + ++b + b--; //a=-2 b=-1 b=0 b=0
+//     --a;  // a=1  1
+//     --a - --b; //a=1 - b=0   1
+//     --a - --b + ++b; //a=1 - b=0  + b=1  2
+//     --a - --b + ++b + b--; //a=1 - b=0 + b=1 + b=1  3   
 
-    // //a=-2 b=-1
+    //a=1 b=0
 
 
 
@@ -757,7 +757,30 @@
 
 // Chapter # 12 to 13
 
-// Question 1 panding
+// Question 1 
+
+// var userInput=prompt("Please enter a single character");
+// if(userInput.length==1)
+// {
+//         if(userInput.charCodeAt() >= 65 && userInput.charCodeAt() <= 90)
+//         {
+//                 document.write("It is an upperCase");
+//         }
+//         else if(userInput.charCodeAt() >= 97 && userInput.charCodeAt() <= 122)
+//         {
+//                 document.write("It is an lowerCase");
+//         }
+//         else if(userInput.charCodeAt() >= 48 && userInput.charCodeAt() <= 57)
+//         {
+//                 document.write("Its is a number");
+//         }
+//         else{
+//                 document.write("Input is neither a number and nor an alphabet")
+//         }
+// }
+// else{
+//         document.write("Please enter a single character")
+// }
 
 
 
@@ -805,9 +828,11 @@
 // Question 4
 
 // var userInput=prompt("Enter a single Character");
-
-// if(userInput==='a' || userInput==='A')
+// if(userInput.length==1)
 // {
+
+//         if(userInput==='a' || userInput==='A')
+//         {
 //         document.write("True Its a vowel");
 // }
 // else if(userInput==='e' || userInput==='E')
@@ -829,7 +854,11 @@
 
 // else
 // {
-//         document.write("False invalid input");
+//         document.write("False");
+// }
+// }
+// else{
+//         document.write("Invalid string ");
 // }
 
 
