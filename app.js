@@ -28,13 +28,6 @@
 
 
 
-
-
-
-
-
-
-
     // CHAPTER #2
 
 
@@ -911,6 +904,476 @@
 
 
 
+
+
+
+
+
+// JS OBJECT ARRAYS
+
+// Question1
+
+// var studentNames=[];
+
+
+// Question 2
+// var studentNames=new Array(10); 
+
+
+// Question 3
+// var arr=['Anaya' , 'Ali' , 'Saba' , 'Shafaq' , 'Rimsha'];
+
+
+// Question 4
+// var arr=[1,3,29,4634,28,127];
+
+// Question 5
+// var arr=[true , false , false , true ];
+
+
+// Question 6
+// var arr=['blue' , 123 , false , undefined , null ];
+
+
+// Question 7
+// var arr=['SSC' , 'HSC' , 'BCS' ,  'BS' , 'BCOM' , 'MS' , 'M. Phil.', 'PhD'];
+// document.write("<h1> Qualifications </h1>")
+// for(var i=0 ; i < arr.length ; i++){
+//     document.write( i+1 + ") " + " " + arr[i] +"<br />" );
+// } 
+
+
+
+// Question 8
+// var studentNames=['Abiha' , 'Shafaq' , 'Rida'];
+// var studentScores=[370,399,480];
+// var totalMarks=500;
+// var percent1=studentScores[0]/totalMarks*100
+// var percent2=studentScores[1]/totalMarks*100
+// var percent3=studentScores[2]/totalMarks*100
+// document.write("Scores of Abiha is "+studentScores[0] +". percentage: "+percent1 +" % <br/>");
+// document.write("Scores of Shafaq is "+studentScores[1] +". percentage: "+percent2 +" % <br/>");
+// document.write("Scores of Abiha is "+studentScores[2] +". percentage: "+percent3 +" % <br/>");
+
+
+// Question 9
+// var colorNames=['Orange' , 'Black' , 'Green']
+// document.write(colorNames +"<br>");
+        
+//                     //   a
+
+// var beginingInsertion=prompt("Enter a color which you want to add in the beginig of array");
+//  colorNames.unshift (beginingInsertion);
+//  if(beginingInsertion){
+// document.write("<br>Your input is inserted at the begining in the array<br>"+colorNames+"<br>");
+   
+// }
+// else{
+//     document.write("<br>You insert nothing at the begining in the array");
+//     document.write("<br>Array still have this elements<br>" + colorNames+"<br>")
+// }
+
+//                     //   b
+                    
+// var endingInsertion=prompt("Enter a color which you want to add in the ending of array");
+//  colorNames.push (endingInsertion);
+//  if(endingInsertion){
+// document.write("<br>Your input is inserted at the ending in the array<br>"+colorNames+"<br>");
+   
+// }
+// else{
+//     document.write("<br>You insert nothing at the ending in the array");
+//     document.write("<br>Array still have this elements<br>" + colorNames + "<br>")
+// }
+
+
+//                         //  c
+
+// var value1=prompt("Enter a color to add in the beginig of array");
+// var value2=prompt("Enter one another color to add in the beginig of array");
+
+// colorNames.unshift(value1 , value2);
+// document.write("<br>Your inputs is inserted at the begining in the array<br>"+colorNames+"<br>");
+
+
+//                             // d
+
+// colorNames.shift();
+// document.write("<br>Updated array after delete first color<br>"+colorNames+"<br>");
+
+     
+//                             // e
+
+// colorNames.pop();
+// document.write("<br>Updated array after delete last color<br>"+colorNames+"<br>");
+
+                            
+                            //    f 
+
+// var position=+prompt("enter a position in number where you want to add color name in array");
+// var colorName=prompt("Enter a color name");
+// if((!(colorName==""))){
+
+//     if(!(isNaN(position ))){
+//         colorNames.splice(position-1,0,colorName);
+// document.write("<br>Array after insrting color on your desired position<br>"+colorNames+"<br>");
+
+//     }else{
+//         document.write("Please enter a number in position");
+//     }
+// }
+// else{
+//         document.write("<br>You insert nothing  in the array");
+//         document.write("<br>Array still have this elements<br>" + colorNames + "<br>")
+//     }
+
+
+                                    //   g 
+
+
+// var position=+prompt("enter a position in number from where you want to delete color name in array");
+// var number=prompt("Enter how many colore you want to delete");
+                                    
+//     if(position<=colorNames.length){
+//     if(!(isNaN(position ))){
+
+//             colorNames.splice(position-1,number);
+//             document.write("<br>Array after deleting color names on your desired positions<br>"+colorNames+"<br>");
+            
+//         }else{
+//             document.write("Please enter a number in position");
+//         }
+//     }else{
+//         document.write("you enter a position which is out of array length");
+//     }
+
+
+
+// Question 10
+
+// var studentScores=[];
+// var size=+prompt("Enter the size of array");
+// var flag=false;
+
+//     if(!(isNaN(size))){
+//         for(var i=0 ; i< size ; i++){
+//          var value=  + prompt("Enter "+ (i+1) +" score ")
+//          if(!(isNaN(value))){
+//             studentScores[i]=value;
+//          }
+//          else{
+//              flag=true;
+//              break;
+//          }
+
+//         }
+//         if(flag===true){
+//             document.write("sorry You enter a string in this array");
+//         }
+//     }
+//     else{
+//         document.write("please enter scores not string <br/>");
+//     }
+
+//     if(!(studentScores.length==0)){
+
+//     document.write("<br> Scores of students: "+studentScores)
+//     }
+//     if(!(studentScores.length==0)){
+
+//         for( var i=0 ; i < size-1 ; i++){
+//             for(var k=0 ; k< size-1-i ; k++){
+//                 var temp;
+//                 if(studentScores[k]>studentScores[k+1]){
+//                     temp=studentScores[k];
+//                     studentScores[k]=studentScores[k+1];
+//                     studentScores[k+1]=temp;
+//                 }
+//             }
+//         }
+//         document.write("<br>Ordered Scores of students: "+studentScores);
+//     }
+//     else{
+//         document.write("array is empty")
+//     }
+
+
+// Question 11
+// var cities=['Karachi' , 'Lahore' , 'Islamabad' , 'Quetta' , 'Peshawar'];
+// document.write("<h1>cities list <br></h1>"+cities);
+// var position=+prompt("Enter a position from you want to copy")
+// var copy=+prompt("Enter how many cities you want to copy");
+// var citiesCopy;
+// if (position<cities.length  && copy>position)
+// {
+
+//      citiesCopy=cities.slice(position-1 , copy);
+//      document.write("<h1> Selected cities list <br></h1>"+citiesCopy);
+// }
+// else{
+//     document.write("<br>You enter wrong position OR number of cities for copy")
+// }
+
+
+
+// Question 12
+// var arr = ['This' , 'is' , 'my' , 'cat' ];
+// document.write("<h1> Array : </h1><br>"+arr+"<br> <h1> string: </h1><br>")
+// for(var i=0 ; i < arr.length ; i++){
+//     document.write(" " + arr[i]);
+// }
+
+                        // OR
+
+// var string=arr.join(" ");
+// document.write("<h1> Array : </h1><br>"+arr+"<br> <h1> string: </h1><br>"+string);
+// document.write(var1);
+
+
+
+
+// Question 13
+// var arr=[];
+// var size=+prompt("Enetr a size of array");
+// if(!isNaN(size)){
+//     for(var i=0 ; i<size ; i++){
+//     var value=prompt("Enter "+ (i+1) +" value ")
+//         arr.push(value);
+//     }
+//     document.write("<h1>Array is : </h1>"+arr);
+// }
+// else{
+//     document.write("Enter size in a number not in string")
+// }
+
+// for(var i=0 ; i<size ; i++){
+
+// document.write("<br><br>out: <br>"+" " +arr.shift());
+// }
+
+// Question 14
+// var arr=[];
+// var size=+prompt("Enetr a size of array");
+// if(!isNaN(size)){
+//     for(var i=0 ; i<size ; i++){
+//     var value=prompt("Enter "+ (i+1) +" value ")
+//         arr.push(value);
+//     }
+//     document.write("<h1>Array is : </h1>"+arr);
+// }
+// else{
+//     document.write("Enter size in a number not in string")
+// }
+
+// for(var i=0 ; i<size ; i++){
+
+// document.write("<br><br>out: <br>"+" " +arr.pop());
+// }
+
+
+
+// Question 15
+// var arr=['Apple','Samsung','Motorola','Nokia','Sony & Haier'];
+// document.write("<select>");
+// document.write("<option>" +arr[0]+ "</opttion>");
+// document.write("<option>" +arr[1]+ "</opttion>");
+// document.write("<option>" +arr[2]+ "</opttion>");
+// document.write("<option>" +arr[3]+ "</opttion>");
+// document.write("<option>" +arr[4]+ "</opttion>");
+// document.write("</select>");
+
+
+
+
+
+
+// ARRAYS AND LOOP
+
+
+
+// Question 1
+
+// var array=[];
+// array=[[1,2] , [3,4]];
+
+// Question 2
+// var array=[[0,1,2,3] , [1,0,1,2] , [2,1,0,1]];
+// for(var i=0 ; i< array.length ; i++){
+//     for(var j=0 ; j<array[i].length ; j++){
+//         document.write(array[i][j]+" &nbsp;&nbsp;&nbsp;&nbsp;");
+//     }
+//     document.write("<br>");
+// }
+
+
+// Quetion 3
+// for(var i=0 ; i <= 10 ; i++){
+//     document.write([i]+"<br>")
+// }
+
+
+// Question 4
+// var tableNumber=+ prompt("Enter a number to show its multiplication table");
+// var tableLength=+ prompt("Enter the length of the table");
+// if(!tableLength){
+//     tableLength=10;
+// }
+// if(!(isNaN(tableLength))  && (!(isNaN(tableNumber))) ){
+//     document.write("multiplication table of " + tableNumber + " length " + tableLength + "<br><br>")
+//     for(var i =1 ; i <= tableLength ; i++){
+//       document.write(tableNumber + " x " + i + " = " + tableNumber*i + "<br>");
+//     }
+// }
+// else{
+//     document.write("Please enter number not string");
+// }
+
+
+// Question 5
+// var arr=['apple' , 'mango' , 'orange' , 'banana' , 'strawbery' ];
+// for(var i=0 ; i<arr.length ; i++){
+//     document.write(arr[i] + " <br>");
+// }
+// for(var i=0 ; i<arr.length ; i++){
+//     document.write(" <br> Element at index " + i + " is " + arr[i] );
+// }
+
+// Question 6
+            //   a
+// document.write("<h2>Counting : </h2>")
+// for( var i=1 ; i<=15 ; i++){
+//     document.write(i + " , ");
+// }
+
+
+//                 //  b
+// document.write("<h2>Reverse Counting : </h2>")
+// for( var i=10 ; i>=1 ; i--){
+//     document.write(i + " , ");
+// }
+
+//                     // c
+// document.write("<h2>Even : </h2>")
+// for( var i=0 ; i<=20 ; i+=2){
+//     document.write(i + " , ");
+// }
+
+
+//                     //   d
+// document.write("<h2>Odd : </h2>")
+// for( var i=1 ; i<=20 ; i+=2){
+//     document.write(i + " , ");
+// }
+
+
+//                     //    e
+
+// document.write("<h2>Series : </h2>")
+// for( var i=2 ; i<=20 ; i+=2){
+//     document.write(i + "k"  + " , ");
+// }
+
+
+// Question 7
+// var arr= ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+// var order=prompt("Welcome to my bakery . what do you want to order sir/ma'am");
+// var flag=false;
+// for(var i=0 ; i<=arr.length ; i++){
+//     if(order===arr[i]){
+//         flag=true;
+//         document.write("Cookies is <b>available</b> at index " + i +" in our Bakery");
+//         break;
+//     }
+// }
+// if(flag===false){
+//     document.write("we are sorry " + order + " is <b>not available</b> in bakery")
+// }
+
+
+
+// Question 8
+// var numbers=[];
+// var size=+prompt("Enter the size of array");
+// var largest;
+// var flag=false;
+
+//     if(!(isNaN(size))){
+//         for(var i=0 ; i< size ; i++){
+//          var value=  + prompt("Enter "+ (i+1) +" value ")
+//          if(!(isNaN(value))){
+//             numbers[i]=value;
+//          }
+//          else{
+//              flag=true;
+//              break;
+//          }
+
+//         }
+//         if(flag===true){
+//             document.write("sorry You enter a string in this array");
+//         }
+//     }
+//     else{
+//         document.write("please enter number not string <br/>");
+//     }
+
+// document.write("Array items : "+numbers);
+// for(var i=0 ; i<numbers.length ; i++){
+    
+//     if(numbers[i]<numbers[i+1]){
+//         largest=numbers[i+1];
+//     }
+// }
+// document.write("<br>largest number is " + largest);
+
+
+// Question 9
+
+// var numbers=[];
+// var size=+prompt("Enter the size of array");
+// var flag=false;
+
+// if(!(isNaN(size))){
+//     for(var i=0 ; i< size ; i++){
+//         var value=  + prompt("Enter "+ (i+1) +" value ")
+//         if(!(isNaN(value))){
+//             numbers[i]=value;
+//          }
+//          else{
+//              flag=true;
+//              break;
+//          }
+
+//         }
+//         if(flag===true){
+//             document.write("sorry You enter a string in this array");
+//         }
+//     }
+//     else{
+//         document.write("please enter number not string <br/>");
+//     }
+
+// var smallest=numbers[0];
+// document.write("Array items : "+numbers);
+// for(var i=0 ; i<numbers.length ; i++){
+    
+//     if(smallest>numbers[i+1]){
+//         smallest=numbers[i+1];
+//         flag=true
+//     }
+// }
+// if(flag==true){
+
+//     document.write("<br>smallest number is " + smallest);
+    
+// }
+
+
+
+// Question 10
+// for(var i=5 ; i<=100 ; i+=5){
+//     document.write(i + " , ");
+// }
 
 
 
