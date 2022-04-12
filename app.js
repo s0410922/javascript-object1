@@ -1583,79 +1583,62 @@
 
 // Question 15
 
-var userPassword = prompt("Enter your password");
-var flag=false;
-var alphabetExist=false;
-var numberExist=false;
-document.write("Entered password is : " + userPassword + "<br>");
+// var userPassword = prompt("Enter your password");
+// var flag=false;
+// var alphabetExist=false;
+// var numberExist=false;
+// document.write("Entered password is : " + userPassword + "<br>");
 
-if(userPassword.length >= 6)
-{ 
-   for(var i=0 ; i<userPassword.length ; i++)
-   {
-       if(i==0)
-       {
+// if(userPassword.length >= 6)
+// { 
+//    for(var i=0 ; i<userPassword.length ; i++)
+//    {
+//        if(i==0)
+//        {
 
-           if((userPassword[0].charCodeAt() == 48 || userPassword[0].charCodeAt() == 49 || userPassword[0].charCodeAt() == 50
-           || userPassword[0].charCodeAt() == 51 || userPassword[0].charCodeAt() == 52 || userPassword[0].charCodeAt() == 53 || userPassword[0].charCodeAt() == 54
-           || userPassword[0].charCodeAt() == 55 || userPassword[0].charCodeAt() == 56 || userPassword[0].charCodeAt() == 57  ))
-           {
-               document.write("The password should not start with a number" + "<br>");
-               document.write("Please enter a valid password");
-               numberExist=true;
-               alphabetExist=true;
-               break;
-            }
-        }
-        else
-        {
-            // for(var j=97 ; j<=122 ; j++)
-            // {
+//            if((userPassword[0].charCodeAt() == 48 || userPassword[0].charCodeAt() == 49 || userPassword[0].charCodeAt() == 50
+//            || userPassword[0].charCodeAt() == 51 || userPassword[0].charCodeAt() == 52 || userPassword[0].charCodeAt() == 53 || userPassword[0].charCodeAt() == 54
+//            || userPassword[0].charCodeAt() == 55 || userPassword[0].charCodeAt() == 56 || userPassword[0].charCodeAt() == 57  ))
+//            {
+//                document.write("The password should not start with a number" + "<br>");
+//                document.write("Please enter a valid password");
+//                numberExist=true;
+//                alphabetExist=true;
+//                break;
+//             }
+//         }
+//         else
+//         {
+//             alphabetExist=true;
 
-            //     if(userPassword[i].charCodeAt()==j)
-            //     {
-            //         alphabetExist=true;
-            //     }
-            // }
+//             for(var j=48 ; j<=57 ; j++)
+//             {
 
-            // for(var j=65 ; j<=90 ; j++)
-            // {
-
-            //     if(userPassword[i].charCodeAt()==j)
-            //     {
-            //         alphabetExist=true;
-            //     }
-            // }
-            alphabetExist=true;
-
-            for(var j=48 ; j<=57 ; j++)
-            {
-
-                if(userPassword[i].charCodeAt()==j)
-                {
-                    numberExist=true;
-                }
-            }
-        }
+//                 if(userPassword[i].charCodeAt()==j)
+//                 {
+//                     numberExist=true;
+//                 }
+//             }
+//         }
        
-   }
-   if(numberExist==false)
-   {
-    document.write("The password should contain a number" + "<br>");
-    document.write("Please enter a valid password");
+//    }
+//    if(numberExist==false)
+//    {
+//     document.write("The password should contain a number" + "<br>");
+//     document.write("Please enter a valid password");
 
-   }
-   if(alphabetExist==false)
-   {
-    document.write("The password should conatin an alphabet" + "<br>");
-    document.write("Please enter a valid password");
+//    }
+//    if(alphabetExist==false)
+//    {
+//     document.write("The password should conatin an alphabet" + "<br>");
+//     document.write("Please enter a valid password");
 
-   }
-}
-else{
-    document.write("Password must be 6 characters long" + "<br>");
-    document.write("Please enter a valid password");
-}
+//    }
+// }
+// else{
+//     document.write("Password must be 6 characters long" + "<br>");
+//     document.write("Please enter a valid password");
+// }
 
 
 
