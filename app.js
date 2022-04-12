@@ -1127,9 +1127,17 @@
 
 // var string=arr.join(" ");
 // document.write("<h1> Array : </h1><br>"+arr+"<br> <h1> string: </h1><br>"+string);
-// document.write(var1);
 
 
+
+                        // OR
+
+// document.write(arr + " <br>");
+// var var1='';
+// for(var i=0 ; i < arr.length ; i++){
+//     var1=var1+ " "+arr[i];
+// }
+//     document.write(var1);
 
 
 // Question 13
@@ -1380,13 +1388,309 @@
 
 
 
+    // chapter 21-25
+    // STRING METHODS
+
+
+//   Question 1
+
+// var firstName=prompt("Enter your first name");
+// var lastName=prompt("Enter your last name");
+// var fullName=firstName + " " + lastName;
+// document.write("Hello " + fullName);
+
+// Question 2
+
+// var phoneModel = prompt(" Enter Your Favourite mobile phone model");
+// var length= phoneModel.length;
+// document.write("My favourite phone is : " + phoneModel + "<br>");
+// document.write("Length of string is : "+length);
+
+// Question 3
+
+// var var1='pakistani';
+// var index=var1.indexOf("n");
+// document.write("String : " + var1 + "<br>");
+// document.write(" index of 'n' is : "+index);
+
+
+// Question 4
+
+// var string = 'hello World';
+// var index = string.lastIndexOf("l");
+// document.write("String : " + string + "<br>");
+// document.write("Last index of 'l' is : "+index);
+
+
+// Question 5
+
+// var string = 'pakistani';
+// var character   = string.charAt(3);
+// document.write("String : " + string + "<br>");
+// document.write("caharter at index 3 is : " + character);
+
+
+// Question 6
+
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// var fullName = firstName.concat(" ",lastName);
+// document.write("Hello " + fullName);
+
+
+// Question 7
+
+// var city = 'Hyderabad';
+// document.write("City : " +city + "<br>");
+// var index = city.indexOf("Hyder");
+// var newCity = city.slice(0 , index) + "Islam" + city.slice(index+5);
+// document.write("After Replacement : "+newCity);
+
+
+            //   OR
+
+// var city = "Hyderabad";
+// document.write("City : " +city + "<br>");
+// var newCity = city.replace("Hyder" , "Islam");
+// document.write("After Replacement : "+newCity);
+
+
+                // OR
+
+// var city = "Hyderabad";
+// document.write("City : " + city + "<br>");
+
+// for(var i=0 ; i< city.length ; i++)
+// {
+//     if(city.slice(i , i+5) === "Hyder")
+//     {
+//         var newCity = city.slice(0 , i) + "Islam" + city.slice(i+5);
+//         document.write("After Replacement : " + newCity);
+
+//     }
+// }
+
+
+// Question 8
+
+// var para = "Ali and Sami are best friends. They play cricket and football together.";
+// var newPara = para.replace(/and/g,"&");
+// document.write(newPara);
+
+
+// Question 9
+
+// var varString = '472';
+// document.write("Value : " + varString + "<br>");
+// document.write("Type : " + typeof(varString) + "<br>");
+// var varNumber = parseInt(varString , 10);
+// document.write("Value : " + varNumber + "<br>");
+// document.write("Type : " + typeof(varNumber));
+
+// Question 10
+
+// var userInput = prompt("Enter a string");
+// var upperCase = userInput.toUpperCase();
+// document.write("User Input : " + userInput + "<br>" +  "Upper case : " + upperCase); 
+
+
+// Question 11
+
+// var userInput = prompt("Enter a string");
+// var lowerCase = userInput.toLowerCase().split(' ');
+// document.write("User Input : " + userInput + "<br>");
+
+
+// for(var i=0 ; i<lowerCase.length ; i++)
+// {
+//   lowerCase[i]=lowerCase[i].charAt(0).toUpperCase() + lowerCase[i].slice(1);
+// }
+// var titleCase = lowerCase.join(" ");
+// document.write("Title case : "+titleCase);
+
+// Question 12
+
+// var number = 325.36;
+// var string = number.toString();
+
+// var result = string.replace(/\./g , "");
+// document.write("Number : " + number + " <br>");
+// document.write("Result : " + result + " <br>");
 
 
 
-    
+                    //  OR
+
+// var number = 325.36;
+// var string = number.toString();
+// var result = "";
+// for (var i=0 ; i< string.length ; i++)
+// {
+//     if(string[i]==".")
+//     {
+//         continue;
+//     }
+//     else{
+//          result=result+string[i];
+//     }
+// }
+// document.write("Number : " + number + " <br>");
+// document.write("Result : " + result );
+
+
+
+// Question 13
+
+// var userInput = prompt("Enter your name");
+// var flag = false;
+// for(var i=0 ; i < userInput.length ; i++)
+// {
+//     var char =userInput[i].charCodeAt();
+//     if( char === 33 || char  === 44 || char  === 46  || char  === 64)
+//     {
+//          document.write("Please enter a valid userName");
+//          flag=true;
+//     }
+// }
+// if(flag===false)
+// {
+
+//     document.write(userInput);
+// }
+
+
+
+// Question 14
+
+// var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var flag = false;
+// var userInput = prompt("Welcome to my Bakery. what do you want to order sir/ma'am ?").toLowerCase();
+// for(var i=0 ; i< arr.length ; i++)
+// {
+
+//     if(userInput == arr[i])
+//     {
+//         document.write(userInput + " is <b>available</b> at index " + i + " in our bakery <br>");
+//         flag=true;
+//         break;
+//     }
+// }
+// if (flag===false)
+// {
+//     document.write("we are sorry . pastry is <b> not available</b> in our bakery");
+// }
+
+
+// Question 15
+
+var userPassword = prompt("Enter your password");
+var flag=false;
+var alphabetExist=false;
+var numberExist=false;
+document.write("Entered password is : " + userPassword + "<br>");
+
+if(userPassword.length >= 6)
+{ 
+   for(var i=0 ; i<userPassword.length ; i++)
+   {
+       if(i==0)
+       {
+
+           if((userPassword[0].charCodeAt() == 48 || userPassword[0].charCodeAt() == 49 || userPassword[0].charCodeAt() == 50
+           || userPassword[0].charCodeAt() == 51 || userPassword[0].charCodeAt() == 52 || userPassword[0].charCodeAt() == 53 || userPassword[0].charCodeAt() == 54
+           || userPassword[0].charCodeAt() == 55 || userPassword[0].charCodeAt() == 56 || userPassword[0].charCodeAt() == 57  ))
+           {
+               document.write("The password should not start with a number" + "<br>");
+               document.write("Please enter a valid password");
+               numberExist=true;
+               alphabetExist=true;
+               break;
+            }
+        }
+        else
+        {
+            // for(var j=97 ; j<=122 ; j++)
+            // {
+
+            //     if(userPassword[i].charCodeAt()==j)
+            //     {
+            //         alphabetExist=true;
+            //     }
+            // }
+
+            // for(var j=65 ; j<=90 ; j++)
+            // {
+
+            //     if(userPassword[i].charCodeAt()==j)
+            //     {
+            //         alphabetExist=true;
+            //     }
+            // }
+            alphabetExist=true;
+
+            for(var j=48 ; j<=57 ; j++)
+            {
+
+                if(userPassword[i].charCodeAt()==j)
+                {
+                    numberExist=true;
+                }
+            }
+        }
+       
+   }
+   if(numberExist==false)
+   {
+    document.write("The password should contain a number" + "<br>");
+    document.write("Please enter a valid password");
+
+   }
+   if(alphabetExist==false)
+   {
+    document.write("The password should conatin an alphabet" + "<br>");
+    document.write("Please enter a valid password");
+
+   }
+}
+else{
+    document.write("Password must be 6 characters long" + "<br>");
+    document.write("Please enter a valid password");
+}
 
 
 
 
 
-  
+
+// Question 16
+
+// var university = "University of Karachi";
+// var arr = university.split('');
+// for(var i=0 ; i<arr.length ; i++)
+// {
+
+//     document.write(arr[i] + "<br>");
+// }
+
+// Question 17
+
+// var userInput = prompt("Enter a string");
+// var index = userInput.length-1;
+// document.write("User input : " + userInput + "<br>");
+// document.write("Last character of input : "+userInput[index]);
+
+
+// Question 18
+// var string = "The quick brown fox jumps over the lazy dog";
+// var lowerCase =  string.toLowerCase();
+// var arr = lowerCase.split(' ');
+// var occurance=0;
+// for(var i=0 ; i< arr.length ; i++)
+// {
+//     if(arr[i] === 'the')
+//     {
+//      occurance+=1;
+//     }
+// }
+// document.write("Text : " + string + "<br>");
+// document.write("There are "+ occurance +" occurance (s) of word 'the ' ");
