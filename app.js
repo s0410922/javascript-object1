@@ -1587,48 +1587,45 @@
 // var flag=false;
 // var alphabetExist=false;
 // var numberExist=false;
+// var specialCharacter=false;
 // document.write("Entered password is : " + userPassword + "<br>");
 
 // if(userPassword.length >= 6)
 // { 
-//    for(var i=0 ; i<userPassword.length ; i++)
-//    {
-//        if(i==0)
-//        {
-
-//            if((userPassword[0].charCodeAt() == 48 || userPassword[0].charCodeAt() == 49 || userPassword[0].charCodeAt() == 50
-//            || userPassword[0].charCodeAt() == 51 || userPassword[0].charCodeAt() == 52 || userPassword[0].charCodeAt() == 53 || userPassword[0].charCodeAt() == 54
-//            || userPassword[0].charCodeAt() == 55 || userPassword[0].charCodeAt() == 56 || userPassword[0].charCodeAt() == 57  ))
+//            if(userPassword[0].charCodeAt() >=48  && userPassword[0].charCodeAt() <=57 )
 //            {
 //                document.write("The password should not start with a number" + "<br>");
 //                document.write("Please enter a valid password");
 //                numberExist=true;
 //                alphabetExist=true;
-//                break;
 //             }
-//         }
-//         else
-//         {
-//             alphabetExist=true;
+// else{
 
-//             for(var j=48 ; j<=57 ; j++)
-//             {
-
-//                 if(userPassword[i].charCodeAt()==j)
+//                 if(userPassword.match(/[A-z]/i) && userPassword.match(/[a-z]/i) && userPassword.match(/[0-9]/))
 //                 {
+//                     alphabetExist=true;
 //                     numberExist=true;
+                          
 //                 }
-//             }
-//         }
-       
+//                 if(userPassword.match(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/))
+//                 {
+//                     specialCharacter=true;
+//                 }
+
+//      }
+//    if(specialCharacter==true)
+//    {
+//     document.write("The password should not contain a special character" + "<br>");
+//     document.write("Please enter a valid password");
+
 //    }
-//    if(numberExist==false)
+//  else if(numberExist==false)
 //    {
 //     document.write("The password should contain a number" + "<br>");
 //     document.write("Please enter a valid password");
 
 //    }
-//    if(alphabetExist==false)
+//   else if(alphabetExist==false)
 //    {
 //     document.write("The password should conatin an alphabet" + "<br>");
 //     document.write("Please enter a valid password");
@@ -1639,8 +1636,6 @@
 //     document.write("Password must be 6 characters long" + "<br>");
 //     document.write("Please enter a valid password");
 // }
-
-
 
 
 
