@@ -1481,11 +1481,9 @@
 // Question 9
 
 // var varString = '472';
-// document.write("Value : " + varString + "<br>");
-// document.write("Type : " + typeof(varString) + "<br>");
-// var varNumber = parseInt(varString , 10);
-// document.write("Value : " + varNumber + "<br>");
-// document.write("Type : " + typeof(varNumber));
+// document.write("Value : " + varString + "<br> Type : " + typeof(varString) + "<br>");
+// var varNumber = + (varString);
+// document.write("Value : " + varNumber + "<br> Type : " + typeof(varNumber));
 
 // Question 10
 
