@@ -1670,3 +1670,104 @@
 // }
 // document.write("Text : " + string + "<br>");
 // document.write("There are "+ occurance +" occurance (s) of word 'the ' ");
+
+
+
+// CHAPTER 26-30
+// MATH METHOD
+
+// Question 1
+
+// var number = + prompt ("please enter a positive number");
+// if(number >= 0  && (!(isNaN(number))))
+// {
+//     document.write("number : " + number + "<br> Round off value : " + Math.round(number) + "<br>" );
+//     document.write("floor value : " + Math.floor(number) + "<br> Ceil value : " + Math.ceil(number));
+// }
+// else{
+//     document.write("Please enter a positive number");
+// }
+
+
+// Question 2
+
+// var number = + prompt ("please enter a negative number");
+// if(number < 0  && (!(isNaN(number))))
+// {
+//     document.write("number : " + number + "<br> Round off value : " + Math.round(number) + "<br>" );
+//     document.write("floor value : " + Math.floor(number) + "<br> Ceil value : " + Math.ceil(number));
+// }
+// else{
+//     document.write("Please enter a Negative number");
+// }
+
+
+// Question 3
+ 
+// var number = + prompt ("please enter a negative number");
+// document.write("The absolute value of " + number + " is " + Math.abs(number));
+
+
+// Question 4
+
+// document.write("Random dice value : " + Math.floor((Math.random()*6)+1));
+
+
+// Question 5
+
+// var random = Math.floor(Math.random()*2+1);
+// if(random == 2)
+// {
+//     document.write(random + "<br> Random coin value : Heads");
+// }
+// else{
+//     document.write(random + "<br> Random coin value : Tails");
+// }
+
+
+// Question 6
+
+// document.write("Random number between 1 and 100 : " + Math.floor((Math.random()*100)+1));
+
+// Question 7
+
+// var weight = prompt("Enter your weight in kilogram");
+// if(weight.match("kgs"))  
+// {
+//  document.write("The weight of user is " + weight);
+// }
+// else if(weight.match("kilogram"))  
+// {
+//  document.write("The weight of user is " + weight);
+// }
+// else if(weight.match(/[a-zA-z]/i) ||  weight.match(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/))  
+// {
+//     document.write("Please enter valid weight");
+// }
+// else{
+//     document.write("The weight of user is " + weight);
+// }
+
+
+
+
+// Question 8
+
+// var random = Math.floor(Math.random()*10+1);
+// var userInput = +prompt("Enter a number between 1 and 10 ");
+// if(random === userInput)
+// {
+//     alert("Congratulation! \n You guess the write number");
+// }
+// else{
+//     alert( " Try again!")
+// }
+
+
+
+
+
+
+
+
+
