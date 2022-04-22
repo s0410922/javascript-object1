@@ -1512,9 +1512,7 @@
 // var string = number.toString();
 
 // var result = string.replace(/\./g , "");
-// document.write("Number : " + number + " <br>");
-// document.write("Result : " + result + " <br>");
-
+// document.write("Number : " + number + " <br> Result : " + result);
 
 
                     //  OR
@@ -1532,8 +1530,14 @@
 //          result=result+string[i];
 //     }
 // }
-// document.write("Number : " + number + " <br>");
-// document.write("Result : " + result );
+// document.write("Number : " + number + " <br>Result : " + result);
+
+
+            //  OR
+
+// var number = 325.36.toString();
+// var arr = number.split(".").join("");
+// document.write("Number : " + number + " <br> Result : " + arr);
 
 
 
