@@ -1732,21 +1732,8 @@
 // Question 7
 
 // var weight = prompt("Enter your weight in kilogram");
-// if(weight.match("kgs"))  
-// {
-//  document.write("The weight of user is " + weight);
-// }
-// else if(weight.match("kilogram"))  
-// {
-//  document.write("The weight of user is " + weight);
-// }
-// else if(weight.match(/[a-zA-z]/i) ||  weight.match(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/))  
-// {
-//     document.write("Please enter valid weight");
-// }
-// else{
-//     document.write("The weight of user is " + weight);
-// }
+// var result = parseFloat(weight);
+// document.write("The weight of the user is "+ result + "Kilograms");
 
 
 
